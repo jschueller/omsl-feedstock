@@ -1,4 +1,5 @@
-mkdir -p $PREFIX/lib/omlibrary
-cp -R $SRC_DIR/Complex.mo $PREFIX/"lib/omlibrary/Complex 4.0.0.mo"
-cp -R $SRC_DIR/Modelica $PREFIX/"lib/omlibrary/Modelica 4.0.0"
-cp -R $SRC_DIR/ModelicaServices $PREFIX/"lib/omlibrary/ModelicaServices 4.0.0"
+OMPATH=${PREFIX}/lib/omlibrary
+mkdir -p ${OMPATH}
+cp -R ${SRC_DIR}/Complex.mo ${OMPATH}/"Complex ${PKG_VERSION}.mo"
+cp -R ${SRC_DIR}/Modelica ${OMPATH}/"Modelica ${PKG_VERSION}"
+cp -R ${SRC_DIR}/ModelicaServices ${OMPATH}/"ModelicaServices ${PKG_VERSION}"

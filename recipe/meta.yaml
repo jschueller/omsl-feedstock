@@ -1,9 +1,8 @@
-{% set name = "omsl" %}
-{% set mslversion = "4.0.0" %}
+{% set version = "4.0.0" %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ mslversion }}
+  name: omsl
+  version: {{ version }}
 
 source:
   url: https://github.com/OpenModelica/OpenModelica-ModelicaStandardLibrary/archive/c11123102e94d4b5acb139331a6d85f45d8adcc0.zip
@@ -11,8 +10,6 @@ source:
 
 build:
   noarch: generic
-  script_env:
-   - MSLVERSION={{ mslversion }}
   number: 0
 
 test:
